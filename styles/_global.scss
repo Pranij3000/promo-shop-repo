@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$primary: #00426b;
+$secondary: #1693ec;
+$white: #ffffff;
+$sub-text: #adadad;
+$blue-background: #ecf6fd;
+$light-background: #d0e9fb3b;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.2rem, calc(1.2rem + 2 * (100vw - 375px) / 1065), 1.5rem);
+    color: $primary;
+}
+
+h1 {
+    font-size: clamp(4rem, calc(4rem + 16 * (100vw - 375px) / 1065), 5.5rem);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(3.2rem, calc(3.2rem + 12 * (100vw - 375px) / 1065), 4rem);
+}
+
+h3 {
+    font-size: clamp(2.8rem, calc(2.8rem + 4 * (100vw - 375px) / 1065), 3.5rem);
+}
+
+h4 {
+    font-size: clamp(2.4rem, calc(2.4rem + 2 * (100vw - 375px) / 1065), 3rem);
+}
+
+h5 {
+    font-size: clamp(2rem, calc(2rem + 2 * (100vw - 375px) / 1065), 2.5rem);
+}
+h6 {
+    font-size: clamp(1.6rem, calc(1.6rem + 2 * (100vw - 375px) / 1065), 2rem);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ps-button-primary {
+    padding: 12px 24px;
+    background: $primary;
+    color: $white;
+    &:hover {
+        background: $white;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+.ps-button-secondary {
+    padding: 12px 24px;
+    background: $secondary;
+    color: $white;
+    &:hover {
+        background: $white;
+        color: $secondary;
+        border: 1px solid $secondary;
+    }
+}
