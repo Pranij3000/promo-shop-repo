@@ -1,0 +1,128 @@
+$primary: var(--primary);
+$secondary: var(--secondary);
+$white: var(--white);
+$sub-text: var(--sub-text);
+$blue-background: var(--blue-background);
+$light-background: var(--light-background);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: $primary;
+}
+
+h1 {
+	font-size: clamp(4rem, calc(4rem + 16 * (100vw - 375px) / 1065), 5.6rem);
+	font-weight: 700;
+}
+
+h2 {
+	font-size: clamp(3.2rem, calc(3.2rem + 8 * (100vw - 375px) / 1065), 4rem);
+}
+
+// h3 {
+// 	font-size: clamp(2.8rem, calc(2.8rem + 8 * (100vw - 375px) / 1065), 3.6rem);
+// }
+
+h3 {
+	font-size: clamp(2.4rem, calc(2.4rem + 4 * (100vw - 375px) / 1065), 2.8rem);
+}
+
+h4 {
+	font-size: clamp(2rem, calc(2rem + 2 * (100vw - 375px) / 1065), 2.4rem);
+}
+
+h5 {
+	font-size: clamp(1.6rem, calc(1.6rem + 2 * (100vw - 375px) / 1065), 2rem);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.ps-btn {
+	padding: 1.2rem 2.4rem;
+	&.ps-btn-filled {
+		border-radius: 0.8rem;
+		&.ps-primary {
+			background: $primary;
+			color: $white;
+			&:hover {
+				background: $white;
+				color: $primary;
+			}
+		}
+		&.ps-secondary {
+			background: $secondary;
+			color: $white;
+			&:hover {
+				background: $white;
+				color: $secondary;
+			}
+		}
+	}
+}
+
+.section-title {
+	margin-bottom: 32px;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		+ p {
+			margin-top: 12px;
+		}
+	}
+}
+
+.section-gap {
+	margin-bottom: 4.8rem;
+}
+
+.section-padding-y {
+	padding: 4.8rem 0;
+}
